@@ -1,0 +1,153 @@
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+}
+
+.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 17px;
+  font-family: "receipt-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  position: relative; /* Necessary for pseudo-elements positioning */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+
+.navbar a:hover {
+  color: black; 
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #25789B;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Smooth grow/shrink transition */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Send it behind the text */
+}
+
+.nav a:hover::before {
+  width: 75px;  
+  height: 50px; 
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+ margin:0;
+ background-color:#0B3948;
+ overflow-x: hidden;
+}
+
+h1 {
+  font-family: "lores-9-wide-bold-alt-oaklan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 6em;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.logo {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  left: 350px;
+  top: 150px;
+}
+
+#starButton {
+  position: relative;
+  top: -350px;
+  left: 275px;
+  background: none;
+  border: none;
+  transition: all 0.2s ease;
+  
+  /* Animation */
+  animation: breathing 2s ease-in-out infinite;
+}
+
+@keyframes breathing {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); } /* Moves slightly up */
+  100% { transform: translateY(0px); }
+}
+
+#starButton img {
+  width: 150px;
+  height: 160px;
+
+}
+
+#popup {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 150px;
+  background-color: #638093;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+}
+
+#popup p {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 170px;
+  font-family: "pixelify-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+#closeButton {
+  position: absolute;
+  top: 10px;
+  left: 165px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-family: "pixelify-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#closeButton:hover {
+  cursor: pointer;
+  background-color: rgb(49, 47, 47);
+  border-style: none;
+}
+
