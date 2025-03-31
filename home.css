@@ -98,6 +98,10 @@ h1 {
   animation: breathing 2s ease-in-out infinite;
 }
 
+#starButton:hover {
+  cursor: pointer;
+}
+
 @keyframes breathing {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-5px); } /* Moves slightly up */
