@@ -4,105 +4,354 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works</title>
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="works.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xej8gvc.css">
 
 </head>
 
-<nav class="nav">
-    <a class="home" href="index.html">home</a>
-    <a class="works" href="works.html">works</a>
-    <a class="resume" href="resume.html">resume</a>
-    <a class="about" href="about.html">about</a>
-    <a class="contact" href="contact.html">contact</a>
-</nav>
-
 <body>
 
-    <div class="heading">
-        <h1>works</h1>
-        <img src="/css/images/Pencil Sticker.gif" alt="pencil gif" class="gif">
-    </div>
+<div class="main-content">
+    <div id="nav"></div>
 
-    <div class="container1">
-        <div class="text-content">
-            <h3>app prototypes:</h3>
-            <h4>TinyVet</h4>
-            <p>TinyVet is a app I prototyped in one of my web design classes, using Adobe Photoshop and Figma. We had free range of what app we wanted to create.</p>
-            <p>I started to do lots of research on the ideas I had but I felt stumped and could not decide what to do. I then started to brainstorm and ask myself, "What could I currently benefit from?", and that's when it hit me. I was looking for exotic pet care for my chinchilla but always had difficulties finding the right vet.</p>
-            <p>That's why I created TinyVet. TinyVet is an app for exotic pet owners, such as myself, to have easy and quality access to veterinary care. I noticed that there was a lack of options of care for exotic pets compared to dogs and cats. There’s a strong community between exotic pet owners and I thought this would be a fun opportunity to unite the community in one place, where people also had the access to talk to and book appointments with exotic vets. </p>
 
-        <div class="btn">
-            <button id="processBtn">Process</button>
-            <div id="popup" class="popup">
-                <button id="closeBtn" class="closebtn">x</button>
-                
-                <div class="sketches">
-                    <img src="/css/images/sketch1.png"> 
-                  
-                    <img src="/css/images/sketch2.png">
-                </div>
-                <div class="popup-content">
-                    <p>These were some of the wireframes I sketched up at the beginning.</p> 
-                    <p>The final prototype ended up looking pretty similar to the sketches.</p>
-            </div>
-
-            </div>
-            <button class="figmabtn">
-                <a href="https://www.figma.com/design/Zu2I17AMF2lIP0oibacVwj/TinyVet?node-id=0-1&t=Jfppx8TzMXsKRK0Z-1" target="_blank">
-
-                <img src="/css/images/figmaicon.png" alt="Figma Icon">
-                </a>
-            </button>
-        </div>
+    <div class="works-container">
+        <div class="row">
+        <div class="header">
+            <h1 id="heading1" class="heading1"></h1>
         </div>
         <div class="images">
-            <p>Mockups</p>
-            <img src="/css/images/tvmockup2.png" class="tvmockup2">
-            <img src="/css/images/tvmockup1.png" class="tvmockup1">
+            <img src="/css/images/tvmockup1.png" class="work-item" data-content="content1">
+            <img src="/css/images/tcmockup.png" class="work-item" data-content="content2">
         </div>
     </div>
-    <br>
-    <div class="container2">
-        <div class="text-content2">
-            <h4>TinyChef</h4>
-            <p>TinyChef is a apple watch apple I prototyped in my UX Design class with Adobe software and Figma. The prompt for this project was to create a app that could be used 10 years in the future.</p>
-            <p>It took me a while to come up with an idea for this project because it was difficult to think of an idea that was not too futursitic and just not feasible. I started to go back to my own interests and what I liked to do and that's cooking.</p>
-            <p>TinyChef is a apple watch app to help beginners who have no experience cooking, to learn how to cook. It's two main features are the scanner feature and the heat detection feature. The scanner feature can scan any produce and it'll show you the best way to cut it. The heat detection feature scans the meat you're cooking and will let you know if it is at safe temperature for consumption.</p>
-        </div>
 
-        <div class="images2">
-            <p>Mockups</p>
-            <img src="/css/images/tcmockup.png" class="tcmockup1">
-            <img src="/css/images/TinyChef.png" class="tcmockup2">
+    <div class="row">
+        <div class="header">
+            <h1 id="heading2" class="heading2"></h1>
         </div>
+        <div class="images">
+            <img src="/css/images/moviepostertrans.png" class="work-item" data-content="content5">
+            <img src="/css/images/psatrans.png" class="work-item" data-content="content6">
+        </div>
+    </div>
 
-        <div class="btn2">
-            <button id="processBtn2">Process</button>
-            <div id="popup2" class="popup2">
-                <p>*in the process of finding sketches from this project...*</p>
-                <button id="closeBtn2" class="closebtn2">x</button>
+    <div class="row">
+        <div class="header">
+            <h1 id="heading3" class="heading3"></h1>
+        </div>
+        <div class="images">
+            <img src="/css/images/phillylogo2.png" class="work-item" data-content="content7">
+            <img src="/css/images/kraftlogo.png" class="work-item" data-content="content8">
+            <img src="/css/images/amclogo.png" class="work-item" data-content="content9">
+        </div>
+        </div>
+   </div>
+
+
+</div>
+
+<!-- Hidden Content -->
+   <div id="content1" class="work-content"> 
+        <div class="sticky-header">
+            <h2>TinyVet</h2>
+        </div>
+        
+    
+        <button class="backBtn">&#8617</button>
+    
+        <div class="grid">
+                <p>TinyVet is an app I prototyped in one of my web design classes, using Adobe Photoshop and Figma. We had a free range of what app we wanted to create. I started to do lots of research on the ideas I had but I felt stumped and could not decide what to do. I then started to brainstorm and ask myself, "What could I currently benefit from?", and that's when it hit me. I was looking for exotic pet care for my chinchilla but always had difficulties finding the right vet. That's why I created TinyVet.</p>
+
+                <div class="figma-phone-preview">
+                    <div class="iphone-frame">
+                        <iframe
+                            style="border: none;"
+                            width="300"
+                            height="737"
+                            src="https://embed.figma.com/proto/Zu2I17AMF2lIP0oibacVwj/TinyVet?page-id=0%3A1&node-id=54-283&p=f&viewport=179%2C273%2C0.19&scaling=scale-down&content-scaling=fixed&starting-point-node-id=54%3A283&embed-host=share" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <p>TinyVet is an app for exotic pet owners, such as myself, to have easy and quality access to veterinary care. I noticed that there was a lack of options of care for exotic pets compared to dogs and cats. There’s a strong community between exotic pet owners and I thought this would be a fun opportunity to unite the community in one place, where people also had the access to talk to and book appointments with exotic vets.</p>
+
+                <div class="link-to-figma">
+                    <p><strong>If you're interested in checking out the process and lofi-wireframes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8594;</strong></p>
+
+                    <a href="https://www.figma.com/design/w0c22pYwBnK29mdJNESqH7/TinyChef?node-id=169-88&t=Elgrqqm3wJ71RqNk-1" target="_blank">
+                    <button class="figmaBtn">
+                    <img src="/css/images/figmaicon.png">   
+                    </button>
+                    </a>
+                </div>
+    
+       </div> 
+    </div>
+ 
+    <div id="content2" class="work-content">
+            <div class="sticky-header">
+                <h2>TinyChef</h2>
+            </div>
+            <button class="backBtn">&#8617</button>
+     
+            <div class="grid">
+                <p>TinyChef is a apple watch apple I prototyped in my UX Design class with Adobe software and Figma. The prompt for this project was to create a app that could be used 10 years in the future. TinyChef is a apple watch app to help beginners who have no experience cooking, to learn how to cook. It took me a while to come up with an idea for this project because it was difficult to think of an idea that was not too futursitic and just not feasible. I started to go back to my own interests and what I liked to do and that's cooking. </p>
+
+                <div class="figma-phone-preview">
+                    <div class="watch-frame">
+                        <iframe
+                            style="border: none;"
+                            width="300"
+                            height="737"
+                            src="https://embed.figma.com/proto/w0c22pYwBnK29mdJNESqH7/TinyChef?page-id=0%3A1&node-id=202-450&p=f&viewport=18%2C291%2C0.26&scaling=scale-down&content-scaling=fixed&starting-point-node-id=202%3A450&embed-host=share" allowfullscreen>
+                        </iframe>
+                    </div>
             </div>
 
-            <button class="figmabtn2">
-                <a href="https://www.figma.com/design/w0c22pYwBnK29mdJNESqH7/TinyChef?node-id=169-88&t=4Mh6WBU1FHRD6RoG-1" target="_blank">
+        
+            <p>TinyChef is a apple watch app to help beginners who have no experience cooking, to learn how to cook. It's two main features are the scanner feature and the heat detection feature. The scanner feature can scan any produce and it'll show you the best way to cut it. The heat detection feature scans the meat you're cooking and will let you know if it is at safe temperature for consumption.</p>
 
-                <img src="/css/images/figmaicon.png" alt="Figma Icon">
+            <div class="link-to-figma">
+                <p><strong>If you're interested in checking out the process and lofi-wireframes &#8680</strong></p>
+
+                <a href="https://www.figma.com/design/w0c22pYwBnK29mdJNESqH7/TinyChef?node-id=169-88&t=Elgrqqm3wJ71RqNk-1" target="_blank">
+                <button class="figmaBtn">
+                <img src="/css/images/figmaicon.png">   
+                </button>
                 </a>
-            </button>
+            </div>
         </div>
-
     </div>
-    
-    
 
+    <div id="content5" class="work-content">
+        <div class="sticky-header">
+            <h2>Movie Poster</h2>
+        </div>
+        <button class="backBtn">&#8617</button>
+         
+            <div class="grid2">
+                <div class="text">
+                    <p>For this project, I had to create a visually appealing movie poster that captured the essence of the movie without copying the original one created. I tried to have fun with Adobe Photoshop for this one, exploring differnet tools and trying out new things.</p>
+                </div>
+
+                <img src="/css/images/MoviePoster.png">
+            </div>      
+    </div>
+
+    <div id="content6" class="work-content">
+        <div class="sticky-header">
+            <h2>PSA</h2>
+        </div>
+        <button class="backBtn">&#8617</button>
+         
+            <div class="grid2">
+                <div class="text">
+                    <p>This was the first design I create using Adobe Photoshop. The goal for this project was the create a PSA poster about a topic you're passionate about, that's thrifting for me. I wanted to share the importance of buying second-hand in regards to the environmental impacts as well as encapsulating the essence of how I see thrifting.</p>
+                </div> 
+
+                <img src="/css/images/psaa.png">
+        </div>
+    </div>
+
+    <div id="content7" class="work-content">
+        <div class="sticky-header">
+            <h2>Philadelphia</h2>
+        </div>
+        <button class="backBtn">&#8617</button>
+
+        <div class="align-content">
+            
+            <div class="grid3" id="grid">
+                <img src="/css/images/p4f1.png" alt="Philadelphia Ad 1">
+                <img src="/css/images/p4f2.png" alt="Philadelphia Ad 2">
+                <img src="/css/images/p4f3.png" alt="Philadelphia Ad 3">
+                <img src="/css/images/p4f4.png" alt="Philadelphia Ad 4">
+            </div>
+
+                <div id="slideshow-container" class="slideshow">
+                    <button id="back">&#8678;</button>
+
+                    
+                    <div id="slide1" class="slide">
+                        <img src="/css/images/p4fslide1.png">
+                        </div>
+                    <div id="slide2" class="slide">
+                        <img src="/css/images/p4fslide2.png">
+                    </div>
+                    <div id="slide3" class="slide">
+                        <img src="/css/images/p4fslide3.png">
+                    </div>
+                    <div id="slide4" class="slide">
+                        <img src="/css/images/p4fslide4.png">
+                    </div>
+                    <div id="slide5" class="slide">
+                        <img src="/css/images/p4fslide5.png">
+                    </div>
+                    <div id="slide6" class="slide">
+                        <img src="/css/images/p4fslide6.png">
+                    </div>
+                    <div id="slide7" class="slide">
+                        <img src="/css/images/p4fslide7.png">
+                    </div>
+                    <div id="slide8" class="slide">
+                        <img src="/css/images/p4fslide8.png">
+                    </div>
+                    <div id="slide9" class="slide">
+                        <img src="/css/images/p4fslide9.png">
+                    </div> 
+
+                    <button id="next">&#8680;</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="content8" class="work-content">
+        <div class="sticky-header">
+            <h2>Kraft</h2>
+        </div>
+        <button class="backBtn">&#8617</button>
+
+        <div class="align-content">
+            
+            <div class="grid3" id="grid">
+                <img src="/css/images/Unleashing chaos in the cheesiest way possible. (1).png" alt="Kraft Ad 1" class="kraftad1">
+                <img src="/css/images/reddead2cheez (2).png" alt="Kraft Ad 2" class="kraftad2">
+                <img src="/css/images/Spread mischeif with cheese (3).png" alt="Kraft Ad 3">
+                <!-- <img src="/css/images/p4f4.png" alt="Kraft Ad 4"> -->
+            </div>
+
+                <div id="slideshow-container" class="slideshow">
+                    <button id="back">&#8678;</button>
+
+                    
+                    <div id="slide1" class="slide">
+                        <img src="/css/images/kraftslide1.png">
+                        </div>
+                    <div id="slide2" class="slide">
+                        <img src="/css/images/kraftslide2.png">
+                    </div>
+                    <div id="slide3" class="slide">
+                        <img src="/css/images/kraftslide3.png">
+                    </div>
+                    <div id="slide4" class="slide">
+                        <img src="/css/images/kraftslide4.png">
+                    </div>
+                    <div id="slide5" class="slide">
+                        <img src="/css/images/kraftslide5.png">
+                    </div>
+                    <div id="slide6" class="slide">
+                        <img src="/css/images/kraftslide6.png">
+                    </div>
+                    <div id="slide7" class="slide">
+                        <img src="/css/images/kraftslide7.png">
+                    </div>
+                    <div id="slide8" class="slide">
+                        <img src="/css/images/kraftslide8.png">
+                    </div>
+                    <div id="slide9" class="slide">
+                        <img src="/css/images/kraftslide9.png">
+                    </div> 
+                    <div id="slide10" class="slide">
+                        <img src="/css/images/kraftslide10.png">
+                    </div> 
+                    <div id="slide11" class="slide">
+                        <img src="/css/images/kraftslide11.png">
+                    </div> 
+                    <div id="slide12" class="slide">
+                        <img src="/css/images/kraftslide12.png">
+                    </div> 
+                    <div id="slide13" class="slide">
+                        <img src="/css/images/kraftslide13.png">
+                    </div> 
+                    <div id="slide14" class="slide">
+                        <img src="/css/images/kraftslide14.png">
+                    </div> 
+                    <div id="slide15" class="slide">
+                        <img src="/css/images/kraftslide15.png">
+                    </div> 
+                    <div id="slide16" class="slide">
+                        <img src="/css/images/kraftslide16.png">
+                    </div> 
+                    <div id="slide17" class="slide">
+                        <img src="/css/images/kraftslide17.png">
+                    </div> 
+
+                    <button id="next">&#8680;</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="content9" class="work-content">
+        <div class="sticky-header">
+            <h2>AMC</h2>
+        </div>
+        <button class="backBtn">&#8617</button>
+
+        <div class="align-content">
+            <div class="grid3" id="grid">
+                <img src="/css/images/amcad1.png" alt="AMC Ad 1">
+                <img src="/css/images/amcad2.png" alt="AMC Ad 2">
+                <img src="/css/images/amcad3.png" alt="AMC Ad 3">
+                <!-- <img src="/css/images/p4f4.png" alt="AMC Ad 4"> -->
+            </div>
+
+                <div id="slideshow-container" class="slideshow">
+                    <button id="back">&#8678;</button>
+
+                    
+                    <div id="slide1" class="slide">
+                        <img src="/css/images/amcslide1.png">
+                        </div>
+                    <div id="slide2" class="slide">
+                        <img src="/css/images/amcslide2.png">
+                    </div>
+                    <div id="slide3" class="slide">
+                        <img src="/css/images/amcslide3.png">
+                    </div>
+                    <div id="slide4" class="slide">
+                        <img src="/css/images/amcslide4.png">
+                    </div>
+                    <div id="slide5" class="slide">
+                        <img src="/css/images/amcslide5.png">
+                    </div>
+                    <div id="slide6" class="slide">
+                        <img src="/css/images/amcslide6.png">
+                    </div>
+                    <div id="slide7" class="slide">
+                        <img src="/css/images/amcslide7.png">
+                    </div>
+                    <div id="slide8" class="slide">
+                        <img src="/css/images/amcslide8.png">
+                    </div>
+                    <div id="slide9" class="slide">
+                        <img src="/css/images/amcslide9.png">
+                    </div> 
+                    <div id="slide10" class="slide">
+                        <img src="/css/images/amcslide10.png">
+                    </div> 
+                    <div id="slide10" class="slide">
+                        <img src="/css/images/amcslide11.png">
+                    </div> 
+
+                    <button id="next">&#8680;</button>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer>
+        © 2025 Chloe Renee Tomsche | All Rights Reserved
+    </footer>
+
+
+    
+    <script src="navbar.js"></script>
+    <script src="works.js"></script>
     
 </body>
-<script src="works.js"></script>
+
 </html>

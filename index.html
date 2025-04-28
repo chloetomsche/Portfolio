@@ -4,40 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/xej8gvc.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xej8gvc.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xej8gvc.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xej8gvc.css">
 
 </head>
 
-<nav class="nav">
-      <a href="index.html">home</a>
-      <a href="works.html">works</a>
-      <a class="resume" href="resume.html">resume</a>
-      <a href="about.html">about</a>
-      <a href="contact.html">contact</a>
-  </nav>
-
 <body>
 
-    <img src="/css/images/bestlogo.gif" alt="logo gif" class="logo">
+    <div id="nav"></div>
 
-    <div class="star-button">
-        <button id="starButton" class="starButton">
-         <img src="/css/images/cutiestar.png">
-        </button>
-        <div id="popup">
-            <p>Welcome to my portfolio site I coded :D</p>
-            <button id="closeButton">x</button>
-        </div> 
+    <div class="container">
+
+    <div class="computer-container">
+
+        <div class="computer">
+            <div class="computer-screen">
+                <div class="inner-screen">
+                    <h1 class="name" id="typed-name"></h1>
+                    <h2 class="titles" id="typed-titles"></h2>
+                </div>
+            </div>
+
+            <div class="computer-bottom">
+                <div class="keyboard">
+                    <div class="keys" data-key="Q">Q</div>
+                    <div class="keys" data-key="W">W</div>
+                    <div class="keys" data-key="E">E</div>
+                    <div class="keys" data-key="R">R</div>
+                    <div class="keys" data-key="T">T</div>
+                    <div class="keys" data-key="Y">Y</div>
+                    <div class="keys" data-key="U">U</div>
+                    <div class="keys" data-key="I">I</div>
+                    <div class="keys" data-key="O">O</div>
+                    <div class="keys" data-key="P">P</div>
+
+                   
+                    <div class="keys" data-key="A">A</div>
+                    <div class="keys" data-key="S">S</div>
+                    <div class="keys" data-key="D">D</div>
+                    <div class="keys" data-key="F">F</div>
+                    <div class="keys" data-key="G">G</div>
+                    <div class="keys" data-key="H">H</div>
+                    <div class="keys" data-key="J">J</div>
+                    <div class="keys" data-key="K">K</div>
+                    <div class="keys" data-key="L">L</div>
+                    <div class="keys" data-key="Z">Z</div>
+
+                    <div class="keys" data-key="X">X</div>
+                    <div class="keys" data-key="C">C</div>
+                    <div class="keys" data-key="V">V</div>
+                    <div class="spacebar" data-key=" "></div>
+                    <div class="keys" data-key=",">,</div>
+                    <div class="keys" data-key="N">N</div>
+                    <div class="keys" data-key="M">M</div>
+                  
+                
+                </div>
+                <div class="touch-pad"></div>
+            </div>
+        </div>
     </div>
+       <!-- <button id=btn>
+            <img src="/css/images/logotrans.png" class="logo">
+            </button>
+            <div id="popup">
+                <p>Welcome to my site I coded! I am Chloe and I have a huge passion for Web Design and Development. I am a Junior Web Developer who's just trying to improve her skills everyday.</p>
+                <button id="closeBtn">x</button>
+            </button>
+        </div>
+     -->
+
+    
+
+    <div class="description-container">
+
+        <div id="titlesDescriptions1">
+            <img src="/css/images/digitalart.png" alt="Digital Art" class="art">
+            <div id="content1">
+                <h2 class="designer">Designer</h1>
+                <p>I love to design visually appealing content in a interactive way.</p>
+
+                <h3><strong>Things I love to design:</strong></h3>
+                <p>Web, Apps, Logos, & Digital Illustrations</p>
+
+                <h3><strong>Tools:</strong></h3>
+                <div class="tools">
+                    <p>Figma</p>
+                    <p>Procreate</p>
+                    <p>Adobe Photoshop</p>
+                    <p>Adobe Express</p>
+                    <p>My Sketchbook!</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="titlesDescriptions2">
+            <img src="/css/images/coding2.png" class="coding" alt="Coding">
+            <div id="content2">
+                <h2 class="content2">Developer</h1>
+                <p>I love to bring creative ideas to life with code.</p>
+
+                <h3><strong>Languages:</strong></h3>
+                <p>HTML, CSS, Javascript, & Python</p>
+
+                <h3><strong>Dev Tools:</strong></h3>
+
+                <div class="join-together">
+                    <div class="tools">
+                        <p>Github</p>
+                        <p>Visual Studio Code</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="titlesDescriptions3">
+            <img src="/css/images/inspiration2.png" class="creative" alt="Creativity">
+            <div class="content3">
+                <h2 class="content3">Creative</h2>
+                <p>I love to use my creativity in every project I take on.</p>
+
+                <h3><strong>Where I use:</strong></h3>
+                <p>Advertising & Web Development & Design</p>
+
+                <h3><strong>Tools:</strong></h3>
+                <div class="tools">
+                    <p>My Brain: I take initial sparks of inspiration and shape them into concepts, constantly evolving and improving ideas as I go. Every project is a process of layering thoughts, exploring possibilities, and pushing boundaries to bring ideas to life.</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        © 2025 Chloe Renee Tomsche | All Rights Reserved
+    </footer>
+
+    <script src="navbar.js"></script>
+    <script src="home.js"></script>
     
 </body>
 
-<script src="home.js"></script>
 </html>
