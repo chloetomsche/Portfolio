@@ -1,16 +1,27 @@
+
 const mainContent = document.querySelector('.main-content');
 const workItems = document.querySelectorAll('.work-item');
 const contents = document.querySelectorAll('.work-content');
+const backButtons = document.querySelectorAll('.backBtn');
 
 
 workItems.forEach(item => {
     item.addEventListener('click', () => {
 
+        console.log("clicked on:", item);
+
         // Get related content ID
         const contentId = item.getAttribute('data-content');
+        console.log("Targeting content:", contentId);
+
         const content = document.getElementById(contentId);
 
-        //Hides everything
+        
+        if (content) {
+          console.log("found content:", content);
+
+
+          //Hides everything
         document.body.classList.add('content-open');
         mainContent.classList.remove('visible');
         mainContent.classList.add('hidden');
@@ -34,10 +45,14 @@ workItems.forEach(item => {
             img.classList.add('fade');
           });
         }, 10);
+
+        } else {
+            console.error("no content found for ID", contentId);
+        }
+        
     });
 
     //Back Button
-    const backButtons = document.querySelectorAll('.backBtn');
     backButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         const content = btn.closest('.work-content');
@@ -59,9 +74,14 @@ workItems.forEach(item => {
 const prototypes = "App Prototypes";
 const design = "Graphic Design";
 const campaigns = "Advertising Campaigns";
+const socialMedia = "Social Media";
+const media = "Video & Audio Editing";
 const output1 = document.getElementById("heading1");
 const output2 = document.getElementById('heading2');
 const output3 = document.getElementById('heading3');
+const output4 = document.getElementById('heading4');
+const output5 = document.getElementById('heading5');
+
 const headerElements = document.querySelectorAll('.header h1');
 
 //Function to simulate keyboard is being typed on
@@ -102,6 +122,10 @@ const headerObserver = new IntersectionObserver((entries, observer) => {
         simulateTyping(design, headerElement, 150);
       } else if (headerElement === output3) {
         simulateTyping(campaigns, headerElement, 150);
+      } else if (headerElement === output4) {
+        simulateTyping(socialMedia, headerElement, 150);
+      } else if (headerElement === output5) {
+        simulateTyping(media, headerElement, 150);
       }
       observer.unobserve(headerElement);
       
@@ -159,4 +183,29 @@ function initSlideshow(modalId) {
 // Initialize slideshow for each modal
 initSlideshow('content7'); // Philadelphia modal
 initSlideshow('content8') // Kraft modal
-initSlideshow('content9'); // Tru Fru modal
+initSlideshow('content9'); // AMC modal
+initSlideshow('content10'); // Little Cesars modal
+initSlideshow('content11'); // Momo modal
+
+
+// MP3 Recording 
+const playBtn = document.getElementById('playBtn');
+const pauseBtn = document.getElementById('pauseBtn');
+const audio = document.getElementById('myAudio');
+
+// Play button functionality
+playBtn.addEventListener('click', function() {
+  audio.play();
+  playBtn.disabled = true;
+  pauseBtn.disabled = false;
+});
+
+// Pause button functionality
+pauseBtn.addEventListener('click', function () {
+  audio.pause();
+  playBtn.disabled = false;
+  pauseBtn.disabled = true;
+
+});
+
+pauseBtn.disabled = true;

@@ -5,22 +5,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    background-color: black;
-    gap: 750px;
+    background-color: none;
+    gap: 650px;
     
   }
   
   .nav-left, 
   .nav-right {
     display: flex;
-    gap: 100px;
+    gap: 50px;
   }
 
-  .nav-right {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-  }
 
   #nav a {
     display: block;
@@ -55,6 +50,20 @@
   background-color: transparent;
   text-decoration: none;
 }
+.nav-left a {
+  width: auto;
+  height: 30px;
+  border: 2px solid #72B01D;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
 
 .email-button:hover,
 .linkedin-btn:hover {
@@ -68,3 +77,32 @@
 }
 
 
+/* Media Queries */
+
+/* White Board Sizing */
+@media (min-width: 1920px) {
+  #nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: black;
+    gap: 1150px;
+    
+  }
+}
+
+/* Split Screen Sizing */
+@media (max-width: 768px) {
+  #nav {
+    gap: 150px;
+    transform: scale(0.9); 
+    transform-origin: top left;  
+  }
+
+  .nav-left {
+    margin-left: -30px;
+  }
+  
+}

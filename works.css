@@ -1,5 +1,4 @@
 
-
 body {
   margin:0;
   height: 100vh;
@@ -56,8 +55,21 @@ p {
   width: 350px;
   margin-top: 40px;
   margin-left: 75px;
+  line-height: 30px;
 }
 
+footer {
+  font-size: 16px;
+  font-family: "cofo-sans-pixel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: #F3EFF5;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  
+}
 .main-content.hidden {
   opacity: 0;
   pointer-events: none;
@@ -77,10 +89,37 @@ p {
   margin-left: 0px;
 }
 
+#workLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  padding: 10px 50px;
+  background-color: black;
+  border: 3px solid #72B01D;
+  border-radius: 6px;
+} 
+#workLinks a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 20px;
+    font-family: "cofo-sans-pixel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+  }
+  
+  #workLinks a:hover {
+    color: #72B01D; 
+  }
+
+
 .works-container .work-item {
   width: 280px;
   height: 280px;
-  object-fit: cover; 
+  object-fit: contain; 
   cursor: pointer;
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
   border: 4px solid #72B01D;
@@ -91,7 +130,7 @@ p {
   align-items: center;
   position: relative;
 }
-.heading1, .heading2, .heading3 {
+.heading1, .heading2, .heading3, .heading4, .heading5 {
   visibility: visible;
   display: block;
   color: #72B01D;
@@ -105,7 +144,7 @@ p {
   justify-content: center;
   align-items: center;
   padding-top: 20px;
-  gap: 200px;
+  gap: 100px;
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
   border: 4px solid #72B01D;
@@ -119,6 +158,7 @@ p {
 .work-item {
   filter: grayscale(100%);
   transition: filter 0.8s ease-in-out, transform 1s ease-in-out;
+  border-radius: 10px;
 }
 .work-item:hover {
   transform: scale(1.6);
@@ -137,6 +177,7 @@ p {
   align-items: center;
   gap: 50px;
   border: 4px solid #72B01D;
+  border-radius: 10px;
   width: 1300px;
   height: 600px;
   padding-bottom: 100px;
@@ -223,6 +264,7 @@ p {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%) scale(1.1);
+  z-index: 1000;
 }
 
 .backBtn {
@@ -317,6 +359,7 @@ p {
   font-size: 22px;
   line-height: 36px;
   border: 4px solid #72B01D;
+  border-radius: 6px;
   padding: 35px;
 }
 
@@ -418,7 +461,7 @@ p {
   position: relative;
   width: 100%;
   height: 325px;
-  margin-top: 200px;
+  margin-top: 100px;
   overflow: hidden;
 
 }
@@ -480,26 +523,93 @@ p {
 
 }
 
+.video-container {
+  padding-bottom: 100px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  background-color: #6a6a6a;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: -50px;
+}
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: none;
+  border: none;
+}
+.button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.logo {
+  padding-bottom: 100px;
+  
+}
+.logo img {
+  width: 350px;
+  height: 350px;
+
+}
+
+#content6 img {
+  width: 400px;
+  height: 600px;
+
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.text-container p {
+  border: 3px solid #72B01D;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+/* MEDIA QUERIES */
+
 /* Split Screen Sizing */
 @media (max-width: 768px) {
   .works-container .work-item {
     width: 180px;
     height: 180px;
-    border: 4px solid #72B01D;
+    
   }
   .works-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 225px;
     gap: 0px;
     height: 100%;
     margin-top: 200px;
+    padding-top: 0;
+    border: none;
+    padding-bottom: 100px;
+  }
 
-    
+  #workLinks {
+    margin-top: -150px;
+    width: 75%;
     
   }
+
   .images {
     display: flex;
     flex-direction: row;
@@ -513,10 +623,14 @@ p {
     display: flex;
     justify-content: center;
     width: 100%;
-
   }
   .header h1 {
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
+    margin-left: -1%;
+  }
+
+  footer {
+    padding: 0;
   }
 }
